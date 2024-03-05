@@ -49,4 +49,13 @@ ul, li {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-centre {
+  align-items: center;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=reset.css.map */

@@ -33,55 +33,107 @@
 <body>
 <section class="section section-main">
   <div class="container">
-    <header class="header">
-      <div class="header-menu">
+    <header class="header flex">
+      <div class="header-menu flex">
         <div class="header-menu__button">
           <span></span>
-          <div>
-
-            <nav class="header-menu__list">
-              <ul>
-                <li><a class="header-menu__link menu-link" href="#editions">editions</a></li>
-                <li><a class="header-menu__link menu-link" href="#controller">controller</a></li>
-                <li><a class="header-menu__link menu-link" href="#about-game">about game</a></li>
-                <li><a class="header-menu__link menu-link" href="#explore">explore</a></li>
-                <li><a class="header-menu__link menu-link" href="#news">news</a></li>
-                <li><a class="header-menu__link menu-link" href="#faq">faq</a></li>
-                <li>
-                  <div class="header-menu__link lang">
-                    <span class="current-lang">english</span>
-                  </div>
-                  <div class="header-menu__languages">
-                    <div class="header-menu__language">
-                      Український
-                    </div>
-                    <div class="header-menu__language">
-                      English
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
         </div>
+
+        <nav class="header-menu__list">
+          <ul class="flex flex-centre">
+            <li><a class="header-menu__link menu-link" href="#editions">editions</a></li>
+            <li><a class="header-menu__link menu-link" href="#controller">controller</a></li>
+            <li><a class="header-menu__link menu-link" href="#about">about</a></li>
+            <li><a class="header-menu__link menu-link" href="#explore">explore</a></li>
+            <li><a class="header-menu__link menu-link" href="#news">news</a></li>
+            <li><a class="header-menu__link menu-link" href="#faq">faq</a></li>
+            <li>
+              <div class="header-menu__link lang">
+                <span class="current-lang">english</span>
+
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1"
+                                    id="Layer_1"
+                                    x="0px"
+                                    y="0px"
+                                    viewBox="0 0 330 330"
+                                    style="enable-background: new 0 0 330 330"
+                                    xml:space="preserve"
+                                >
+                                        <path
+                                            id="XMLID_224_"
+                                            d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394  l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393  C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"
+                                        />
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                  <g></g>
+                                    </svg>
+
+                <div class="header-menu__languages">
+                  <div class="header-menu__language language">Український</div>
+                  <div class="header-menu__language language">English</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <div class="header-timer">
-        <span>Release</span>
 
-        <div class="header-timer__values">
+      <div class="header-timer flex flex-centre">
+        <span>Release:</span>
+
+        <div class="header-timer__values flex flex-centre ">
           <div class="header-timer__item">
             <div class="header-timer__item-value" id="days">0</div>
             <div class="header-timer__item-info">D</div>
           </div>
-        </div>
 
-        <div class="header-timer__item">
-          <div class="header-timer__item-value" id="hours">0</div>
-          <div class="header-timer__item-info">D</div>
+
+          <div class="header-timer__item">
+            <div class="header-timer__item-value" id="hours">0</div>
+            <div class="header-timer__item-info">H</div>
+          </div>
+
+          <div class="header-timer__item">
+            <div class="header-timer__item-value" id="minutes">0</div>
+            <div class="header-timer__item-info">M</div>
+          </div>
+
+          <div class="header-timer__item">
+            <div class="header-timer__item-value" id="seconds">0</div>
+            <div class="header-timer__item-info">S</div>
+          </div>
         </div>
       </div>
     </header>
+
+    <div class="description">
+      <div class="description-title">
+        <h1>God of War Ragnarök</h1>
+        <div class="description-subtitle">
+          Taking place three years following the events of the previous game,
+          Fimbulwinter, a great winter that spans three summers,
+          is drawing to a close which will begin the prophesied Ragnarök.
+        </div>
+
+        <div class="description-button">Buy now</div>
+      </div>
+    </div>
   </div>
 </section>
 </body>

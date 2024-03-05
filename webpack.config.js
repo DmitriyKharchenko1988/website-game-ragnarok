@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -25,14 +25,14 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "assets/resource",
+        type: "asset/resource",
       },
-    ]
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: "God of War",
       template: "src/index.html",
     }),
-  ]
-}
+  ],
+};
