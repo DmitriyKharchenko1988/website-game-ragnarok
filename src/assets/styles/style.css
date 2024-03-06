@@ -22,6 +22,12 @@
 .section-main:before {
   background: url(../images/bg.png) no-repeat center/cover;
 }
+.section-dual {
+  margin-top: 54px;
+}
+.section-about {
+  margin-top: 90px;
+}
 
 .header {
   align-items: center;
@@ -273,6 +279,131 @@
   background: #6039a0;
 }
 
+.dual {
+  column-gap: 5%;
+  margin-top: 20px;
+  transition: column-gap 0.5s;
+}
+.dual-description {
+  max-width: 410px;
+}
+.dual-description p {
+  color: #A9C7C7;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 22px;
+}
+.dual-description p span {
+  font-weight: 700;
+}
+.dual-description__info {
+  margin-top: 19px;
+  justify-content: space-between;
+  align-items: center;
+}
+.dual-description__price {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.dual-description__button {
+  background: #FF4136;
+  border-radius: 6px;
+  padding: 12px 36px;
+  font-weight: 500;
+  line-height: 19px;
+  color: white;
+  display: flex;
+  width: max-content;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.25s;
+  padding: 14px 19px;
+  font-weight: 500;
+}
+.dual-description__button:hover {
+  background: #f8625a;
+}
+.dual-description__button:active {
+  background: #a4221c;
+}
+.dual-img {
+  max-width: 50%;
+  position: relative;
+}
+.dual-img img {
+  max-width: fit-content;
+  animation: gravitation 1.5s linear infinite alternate;
+}
+.dual-img::before {
+  content: "";
+  display: block;
+  width: 194px;
+  height: 119px;
+  background: rgba(79, 96, 152, 0.8);
+  filter: blur(75px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video {
+  position: relative;
+  margin-top: 32px;
+  transition: transform 0.5s;
+  transform: scale(1);
+}
+.video video {
+  width: 100%;
+  height: auto;
+}
+.video-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+.video-info.hidden {
+  opacity: 0;
+}
+.video-info.hidden:hover {
+  opacity: 1;
+}
+.video-title {
+  font-weight: 500;
+  font-size: 50px;
+  color: white;
+  line-height: 39px;
+}
+.video-btn {
+  background: #30373F;
+  border-radius: 6px;
+  padding: 9px 26px;
+  font-weight: 500;
+  line-height: 16px;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  margin: 28px auto 0 auto;
+  transition: background 0.25s;
+  text-transform: uppercase;
+}
+.video-btn:hover {
+  background: #525c67;
+}
+
+@keyframes gravitation {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 @keyframes move {
   0% {
     opacity: 0;
