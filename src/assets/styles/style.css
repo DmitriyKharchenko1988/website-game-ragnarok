@@ -31,7 +31,7 @@
 .section-explore {
   margin-top: 80px;
 }
-.section-news {
+.section-news, .section-faq {
   margin-top: 100px;
 }
 
@@ -626,6 +626,57 @@
 }
 .news-item__button:hover {
   background: #30373F;
+}
+
+.faq-items {
+  flex-direction: column;
+  row-gap: 32px;
+}
+.faq-item {
+  transition: transform 0.4s;
+  transform: translate(0);
+}
+.faq-item__header {
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: white;
+  cursor: pointer;
+  border-bottom: 2px solid #8856D9;
+  padding-bottom: 8px;
+}
+.faq-item__header span {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #8c96a0;
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+}
+.faq-item__header span::before {
+  font-size: 25px;
+  content: "+";
+  transition: transform 0.25s;
+}
+.faq-item__content {
+  height: 0;
+  opacity: 0;
+  transition: height 0.25s, opacity 0.25s;
+}
+.faq-item__content p {
+  padding-top: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.faq-item__content p span {
+  color: #FF4136;
+}
+.faq-item.opened span::before {
+  transform: rotate(45deg);
+}
+.faq-item.opened .faq-item__content {
+  opacity: 1;
 }
 
 @keyframes gravitation {
