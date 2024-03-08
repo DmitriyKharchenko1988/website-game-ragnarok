@@ -679,6 +679,129 @@
   opacity: 1;
 }
 
+.footer {
+  padding-top: 156px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.footer::before {
+  content: " ";
+  display: block;
+  width: 786px;
+  height: 439px;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  z-index: -1;
+  background: url(../images/footer.png) no-repeat center/cover;
+}
+.footer-top {
+  justify-content: space-between;
+}
+.footer-menu {
+  column-gap: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: uppercase;
+  transition: color 0.25s ease;
+}
+.footer-menu a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-menu a:hover {
+  color: #8856D9;
+}
+.footer-lang {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 27px;
+  cursor: pointer;
+}
+.footer-lang span {
+  text-transform: uppercase;
+  color: #8C96A0;
+  margin-left: 5px;
+}
+.footer-lang__current {
+  color: white;
+  text-transform: uppercase;
+}
+.footer-lang__list {
+  position: relative;
+}
+.footer-lang__list:hover .footer-lang__content {
+  visibility: visible;
+}
+.footer-lang__content {
+  background: #30373F;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  visibility: hidden;
+}
+.footer-lang__content-item {
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+.footer-lang__content-item:hover {
+  color: #8856D9;
+}
+.footer-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #8C96A0;
+  margin: 50px auto 38px auto;
+  max-width: 50%;
+}
+.footer-icon {
+  text-align: center;
+}
+.footer-year {
+  margin: 20px auto 13px auto;
+}
+.footer-year, .footer-rights {
+  font-weight: 400;
+  line-height: 19px;
+  color: #8C96A0;
+  text-align: center;
+}
+.footer-year a, .footer-rights a {
+  color: #8856D9;
+  text-decoration: underline;
+}
+
+.swiper-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: #8c96a0;
+  border-radius: 6px;
+  z-index: 9;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+.swiper-button:hover {
+  background: #8856D9;
+}
+.swiper-button svg {
+  fill: white;
+}
+.swiper-button-prev {
+  left: 10%;
+}
+.swiper-button-next {
+  right: 10%;
+}
+.swiper-button-next svg {
+  transform: scale(-1, 1);
+}
+
 @keyframes gravitation {
   0% {
     transform: translateY(-15px);
