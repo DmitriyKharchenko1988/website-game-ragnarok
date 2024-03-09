@@ -1308,6 +1308,11 @@ graceful-fs@^4.1.2, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
+hammerjs@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.4.tgz#e161706d2e610ef295b16eadc515df7d9c59aa23"
+  integrity sha512-7eWteNDFD5a792W0bsxLUfowijwXFIwN8JDuZ3e8+0+mQQ9Hgp0ROxr36DdhbjACwi5c0ep86loTI2NcT41ang==
+
 handle-thing@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-2.0.1.tgz#857f79ce359580c340d43081cc648970d0bb234e"
@@ -2611,6 +2616,18 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+swiper@^11.0.7:
+  version "11.0.7"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.0.7.tgz#fe51bb64546c2c21a1ec6914e7764af953443ded"
+  integrity sha512-cDfglW1B6uSmB6eB6pNmzDTNLmZtu5bWWa1vak0RU7fOI9qHjMzl7gVBvYSl34b0RU2N11HxxETJqQ5LeqI1cA==
+
+swipr@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/swipr/-/swipr-2.1.0.tgz#bbd902baaba6622d635a34cbff9b309b4d67f19a"
+  integrity sha512-uz7Joi4ry0Fr64f2Lte7jN36y/0BQPQLsafUhKmYfkB+tNHVtjKqwWf5MR9DHRM5/RMSZVWNAS6nwPHp6MZfHg==
+  dependencies:
+    hammerjs "2.0.4"
 
 tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.1"

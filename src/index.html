@@ -41,15 +41,15 @@
 
         <nav class="header-menu__list">
           <ul class="flex flex-centre">
-            <li><a class="header-menu__link menu-link" href="#editions">editions</a></li>
-            <li><a class="header-menu__link menu-link" href="#controller">controller</a></li>
-            <li><a class="header-menu__link menu-link" href="#about">about</a></li>
-            <li><a class="header-menu__link menu-link" href="#explore">explore</a></li>
-            <li><a class="header-menu__link menu-link" href="#news">news</a></li>
-            <li><a class="header-menu__link menu-link" href="#faq">faq</a></li>
+            <li><a data-text="editions" class="header-menu__link menu-link" href="#editions">editions</a></li>
+            <li><a data-text="controller" class="header-menu__link menu-link" href="#controller">controller</a></li>
+            <li><a data-text="about" class="header-menu__link menu-link" href="#about">about</a></li>
+            <li><a data-text="explore" class="header-menu__link menu-link" href="#explore">explore</a></li>
+            <li><a data-text="news" class="header-menu__link menu-link" href="#news">news</a></li>
+            <li><a data-text="faq" class="header-menu__link menu-link" href="#faq">faq</a></li>
             <li>
               <div class="header-menu__link lang">
-                <span class="current-lang">english</span>
+                <span class="current-lang" data-text="english">english</span>
 
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -84,8 +84,8 @@
                                     </svg>
 
                 <div class="header-menu__languages">
-                  <div class="header-menu__language language">Український</div>
-                  <div class="header-menu__language language">English</div>
+                  <div class="header-menu__language language" data-lang="uk">Українська</div>
+                  <div class="header-menu__language language" data-lang="en">English</div>
                 </div>
               </div>
             </li>
@@ -137,10 +137,10 @@
   </div>
 </section>
 
-<section class="section section-editions" id="editions">
+<section class="section hidden section-editions" id="editions">
   <div class="container">
     <div class="editions">
-      <h2>Editions</h2>
+      <h2 data-text="editions">Editions</h2>
 
       <div class="editions-list">
         <div class="editions-item">
@@ -223,7 +223,7 @@
   </div>
 </section>
 
-<section class="section section-dual " id="controller">
+<section class="section hidden section-dual " id="controller">
   <div class="container">
     <h2>DualSens</h2>
 
@@ -255,7 +255,7 @@
 </section>
 
 
-<section class="section section-about" id="about">
+<section class="section hidden section-about" id="about">
   <h2>About Game </h2>
 
   <div class="video">
@@ -277,7 +277,7 @@
   </div>
 </section>
 
-<section class="section-explore" id="explore">
+<section class="section-explore hidden" id="explore">
   <div class="container">
     <h2>Explore the God of War series</h2>
 
@@ -286,14 +286,14 @@
         <h3>Here are the God of War (PC) System Requirements</h3>
 
         <div class="explore-switch flex flex-centre">
-          <div class="explore-switch__title active">Minimum</div>
+          <div class="explore-switch__title active" data-requirements="minimum">Minimum</div>
 
           <div class="explore-switch__checkbox">
-            <input type="checkbox" name="Requirements" class="checkbox">
+            <input type="checkbox" name="requirements" class="checkbox">
             <span></span>
           </div>
 
-          <div class="explore-switch__title">Recommended</div>
+          <div class="explore-switch__title" data-requirements="recommended">Recommended</div>
         </div>
 
         <div class="explore-info flex flex-centre">
@@ -341,14 +341,14 @@
         <h3>God of War for PS4</h3>
 
         <div class="explore-switch flex flex-centre">
-          <div class="explore-switch__title active">Standard</div>
+          <div class="explore-switch__title active" data-versions="standard">Standard</div>
 
           <div class="explore-switch__checkbox">
             <input type="checkbox" name="versions" class="checkbox">
             <span></span>
           </div>
 
-          <div class="explore-switch__title">Limited</div>
+          <div class="explore-switch__title" data-versions="limited">Limited</div>
         </div>
 
         <div class="explore-item__price">15.99$</div>
@@ -406,7 +406,7 @@
   </div>
 </section>
 
-<section class="section-news" id="news">
+<section class="section-news hidden" id="news">
   <h2>News</h2>
 
   <div class="news swiper flex-centre flex">
@@ -571,7 +571,7 @@
   </div>
 </section>
 
-<section class="section section-faq" id="fag">
+<section class="section hidden section-faq" id="faq">
   <div class="container">
     <h2>FAQ</h2>
 
@@ -623,14 +623,12 @@
   <div class="container">
     <div class="footer-top flex">
       <ul class="footer-menu flex flex-centre">
-        <li>
         <li><a class="menu-link" href="#editions">editions</a></li>
         <li><a class="menu-link" href="#controller">controller</a></li>
         <li><a class="menu-link" href="#about">ABOUT</a></li>
         <li><a class="menu-link" href="#explore">Explore</a></li>
         <li><a class="menu-link" href="#news">news</a></li>
         <li><a class="menu-link" href="#faq">FAQ</a></li>
-        </li>
       </ul>
 
       <div class="footer-lang flex">

@@ -1,3 +1,16 @@
+.section.hidden .editions-item {
+  transition: transform 0s;
+  transform: translateX(-2000px);
+}
+.section.hidden h2 {
+  transition: opacity 0s;
+  opacity: 0;
+}
+.section.hidden .dual,
+.section.hidden .explore-info {
+  transition: column-gap 0s;
+  column-gap: 250%;
+}
 .section-main {
   padding-top: 40px;
   position: relative;
@@ -221,6 +234,12 @@
   padding: 17px;
   transition: transform 0.25s ease-in-out;
   transform: translateX(0);
+}
+.editions-item:nth-child(2) {
+  transition-delay: 0.25s;
+}
+.editions-item:last-child {
+  transition-delay: 0.5s;
 }
 .editions-item__img {
   border-radius: 6px;

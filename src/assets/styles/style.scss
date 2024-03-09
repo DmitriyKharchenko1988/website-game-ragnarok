@@ -3,6 +3,26 @@
 
 
 .section {
+  &.hidden {
+    .editions {
+      &-item {
+        transition: transform 0s;
+        transform: translateX(-2000px);
+      }
+    }
+
+    h2 {
+      transition: opacity 0s;
+      opacity: 0;
+    }
+
+    .dual,
+    .explore-info {
+      transition: column-gap 0s;
+      column-gap: 250%;
+    }
+  }
+
   &-main {
     padding-top: 40px;
     position: relative;
@@ -265,6 +285,14 @@
     padding: 17px;
     transition: transform 0.25s ease-in-out;
     transform: translateX(0);
+
+    &:nth-child(2) {
+      transition-delay: .25s;
+    }
+
+    &:last-child {
+      transition-delay: 0.5s;
+    }
 
     &__img {
       border-radius: 6px;
