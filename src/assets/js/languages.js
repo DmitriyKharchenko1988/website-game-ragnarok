@@ -19,8 +19,6 @@ export const languages = {
     text5: "Official digital soundtrack",
     text6: "You can also buy an exclusive controller\n" +
       "          with the",
-    text7: "",
-    text8: "",
     deluxe: "Digital Deluxe Edition",
     standard: "Standard Edition",
     basic: "Basic Edition",
@@ -59,8 +57,6 @@ export const languages = {
     text4: "Обладунки Даркдейла",
     text5: "Офіційний цифровий саундтрек",
     text6: "Ви також можете придбати ексклюзивний контролер за допомогою",
-    text7: "",
-    text8: "",
     deluxe: "Цифрове делюкс-видання",
     standard: "Стандартне видання",
     basic: "Базова версія",
